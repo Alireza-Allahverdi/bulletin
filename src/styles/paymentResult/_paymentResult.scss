@@ -1,0 +1,23 @@
+.paymentResultPage {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    img:nth-child(1) {
+        width: 80%;
+    }
+    img {
+        width: 60%;
+    }
+    .paymentDesc {
+        padding: 0 24px;
+        h2 {
+            color: $dark-main-color;
+            margin-bottom: 5px;
+        }
+    }
+    button {
+        height: 50px;
+    }
+}

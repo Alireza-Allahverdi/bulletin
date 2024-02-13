@@ -1,0 +1,101 @@
+.documentsPage {
+  .documentPageContent {
+    padding: 15px;
+    h3 {
+      text-align: center;
+    }
+    .groupDocHeader {
+      margin: 17px 0;
+      color: $dark-main-color;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .react-loading-skeleton {
+      margin: 5px 0;
+      height: 50px;
+    }
+  }
+  .newDocButton {
+    width: max-content;
+    margin: auto;
+    button {
+      border: none;
+      color: white;
+      background-color: $light-main-color;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+  }
+}
+
+// new doc modal
+.newDocComp {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 100;
+  h2 {
+    text-align: center;
+    color: $gray-icon-color;
+    margin: 15px 0;
+  }
+  .title {
+    color: $dark-main-color;
+    text-align: center;
+    font-weight: 700;
+  }
+  .docForm {
+    padding: 40px 25px;
+    .container {
+      margin-top: 40px;
+      .browseFiles {
+        border: none;
+        color: $dark-main-color;
+        font-weight: 600;
+        background-color: #fff;
+        font-size: 1rem;
+      }
+      .browseCont {
+        padding-left: 5px;
+        .uploadedFile {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 10px;
+          background-color: #d8dce8;
+          border-radius: 5px;
+          height: 42px;
+          svg {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+  .newDocActions {
+    margin: auto;
+    width: max-content;
+    button {
+      margin: 0 10px;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      padding: 5px 15px;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    button:nth-child(1) {
+      background-color: $not-going;
+    }
+    button:nth-child(2) {
+      background-color: $light-main-color;
+    }
+  }
+  .error {
+    color: $not-going;
+    font-weight: 700;
+  }
+}

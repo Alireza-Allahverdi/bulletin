@@ -1,0 +1,31 @@
+// .whole {
+// //   min-height: 90vh;
+// //   max-height: 100vh;
+// }
+.discoverPage {
+  overflow-y: auto;
+  min-height: 90vh;
+  max-height: 100vh;
+  .discoverPageTop {
+    padding: 14px 18px;
+    text-align: center;
+    p {
+      font-size: 20px;
+      color: $dark-main-color;
+      font-weight: 700;
+    }
+    .inputCompCont {
+      margin: 1rem 0;
+    }
+    button {
+      font-weight: 700;
+    }
+  }
+  .discoverDataContainer {
+    // overflow: hidden;
+    padding: 0 18px;
+    .eachCard {
+      margin: 8px 0;
+    }
+  }
+}

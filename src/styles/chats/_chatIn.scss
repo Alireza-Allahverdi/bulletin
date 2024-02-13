@@ -1,0 +1,258 @@
+.chatInside {
+  .chatContainer {
+    background-color: $behind-modal-color;
+    width: 100vw;
+    height: calc(100vh - 90px);
+    overflow-y: auto;
+    .noData {
+      background-color: $dark-main-color;
+      color: #fff;
+      width: max-content;
+      padding: 10px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 2em;
+      margin: 50% auto;
+    }
+  }
+  .chatInput {
+    width: 100%;
+    background-color: #d1d2d7;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    p {
+      color: $dark-main-color;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-align: center;
+      margin: 0 auto;
+    }
+    input {
+      background-color: #fff;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      width: 80%;
+      height: 36px;
+      padding: 0 8px;
+      font-size: 1rem;
+      margin-left: 10px;
+      &:focus {
+        outline: unset;
+      }
+    }
+    svg {
+      width: 10%;
+      color: $dark-main-color;
+      background-color: #fff;
+      border-radius: 0 5px 5px 0;
+      height: 36px;
+    }
+  }
+}
+
+// chat in card styles
+.chatBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 0 14px;
+  .chatWithInfo {
+    display: flex;
+    align-items: center;
+    width: 75%;
+  }
+  .msg {
+    position: relative;
+    padding: 5px 10px;
+    border-radius: 5px 5px 0 5px;
+    color: #fff;
+    background-color: $dark-main-color;
+    margin-right: 5px;
+    box-shadow: -3px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 1.5rem;
+    .pollMsg {
+      display: flex;
+      flex-direction: column;
+      width: 230px;
+      .pollTitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .voteNumber {
+          min-width: 50px;
+          margin-left: 10px;
+        }
+      }
+      .pollChoices {
+        margin: 15px 0;
+        div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        progress {
+          background-color: #fff;
+        }
+        .choice {
+          span {
+            font-size: 12px;
+            color: #f5f5f5;
+            margin-right: 10px;
+          }
+          .answer {
+            width: calc(100% - 40px);
+            span {
+              font-weight: 700;
+              font-size: 15px;
+            }
+            .progressContainer {
+              width: calc(100% - 63px);
+              .votePercentage {
+                margin-right: auto;
+                height: 10px;
+                border-radius: 15px;
+                background-color: #f1b972;
+                transition: all 0.5s ease-in;
+              }
+            }
+          }
+        }
+      }
+      .pollActionsAndTime {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          font-size: 0.6rem;
+          color: rgb(194, 189, 189);
+        }
+        button {
+          background-color: transparent;
+          border: none;
+          width: 40%;
+        }
+      }
+    }
+  }
+  .mine {
+    flex-direction: row-reverse;
+    .senderInfo {
+      color: $light-main-color;
+      margin-left: 5px;
+      line-height: 0.8rem;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: auto;
+      svg {
+        font-size: 2rem;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+      }
+    }
+    .msg {
+      .pollMsg {
+        .pollActionsAndTime {
+          button {
+            color: gold;
+          }
+        }
+      }
+      &::after {
+        content: "";
+        clip-path: polygon(0 0, 51% 50%, 100% 100%, 0 100%);
+        position: absolute;
+        bottom: 0;
+        right: -9.5px;
+        width: 10px;
+        height: 10px;
+        background-color: $dark-main-color;
+        border-radius: 0 0 10px 0;
+      }
+    }
+  }
+  .other {
+    flex-direction: row;
+    .senderInfo {
+      color: #615d5d;
+      margin-right: 5px;
+      margin-top: auto;
+      line-height: 0.8rem;
+      text-align: center;
+      font-size: 0.9rem;
+      svg {
+        font-size: 2rem;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+      }
+    }
+    .msg {
+      border-radius: 5px 5px 5px 0;
+      color: $dark-main-color;
+      background-color: #fff;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      line-height: 1.5rem;
+      .pollMsg {
+        .pollChoices {
+          .choice {
+            span {
+              color: #252525;
+            }
+            .answer {
+              .votePercentage {
+                background-color:$dark-main-color;
+              }
+            }
+          }
+        }
+        .pollActionsAndTime {
+          button {
+            color: $light-main-color;
+          }
+          p {
+            color: $dark-main-color;
+          }
+        }
+      }
+      &::before {
+        clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%);
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 0 0 0 5px;
+      }
+    }
+  }
+  .likeWithCount {
+    display: flex;
+    flex-direction: column;
+    color: $like-color;
+    align-items: center;
+    line-height: 0.8rem;
+    font-weight: 700;
+    svg {
+      font-size: 1.3rem;
+    }
+  }
+}
+.mine {
+  flex-direction: row-reverse;
+}
+.other {
+  flex-direction: row;
+}

@@ -1,0 +1,30 @@
+.contactusPage {
+    .contactGif {
+        margin: 18px auto;
+    }
+    .messageInputCont {
+        display: flex;
+        flex-direction: column;
+        padding: 0 18px;
+        p {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        textarea {
+            border: none;
+            resize: vertical;
+            padding: 10px;
+            background-color: $behind-modal-color;
+            height: 170px;
+            text-align: start;
+            border-radius: 16px;
+            margin: 7px 0;
+            font-size: 1rem;
+        }
+        .btnComp {
+            margin: 0 auto;
+            min-width: 70px;
+            width: 100px;
+        }
+    }
+}

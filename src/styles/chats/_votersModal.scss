@@ -1,0 +1,12 @@
+.votersModal {
+    position: fixed;
+    z-index:200;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    background-color: #fff;
+    .voters {
+        padding: 20px;
+    }
+}

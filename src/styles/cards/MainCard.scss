@@ -1,0 +1,19 @@
+.mainCardPic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 47px;
+  border-radius: 4px;
+  background-color: #fff;
+  img {
+    width: 47px;
+    height: 47px;
+    border-radius: 4px;
+    object-fit: contain;
+  }
+  svg {
+    font-size: 30px;
+    color: $dark-main-color;
+  }
+}

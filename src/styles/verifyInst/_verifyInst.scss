@@ -1,0 +1,25 @@
+.verifyInstitutionalPage {
+    p {
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        column-gap: 10px;
+        font-weight: 700;
+        color: #fff;
+        background-color: $dark-main-color;
+        box-shadow: $global-box-shadow;
+        border: none;
+        border-radius: 7px;
+        padding: 20px;
+        font-size: 1rem;
+        svg {
+            font-size: 25px;
+        }
+    }
+}

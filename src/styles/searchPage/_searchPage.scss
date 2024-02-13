@@ -1,0 +1,31 @@
+.searchContent {
+  padding: 10px 0;
+  .resultSection {
+    &:not(.title) {
+      padding: 10px 20px;
+    }
+    .title {
+      color: $dark-main-color;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  }
+  .noteConatiner {
+    width: 20%;
+    box-shadow: 5px 5px 13px 0 hsla(0, 1%, 85%, 0.9),
+      -5px -5px 10px 0 hsla(0, 0%, 100%, 0.9),
+      5px -5px 10px 0 hsla(0, 1%, 85%, 0.2),
+      -5px 5px 10px 0 hsla(0, 1%, 85%, 0.2),
+      inset -1px -1px 2px 0 hsla(0, 1%, 85%, 0.5),
+      inset 1px 1px 2px 0 hsla(0, 0%, 100%, 0.3);
+  }
+  .eventCard {
+    .title {
+        color: #fff;
+    }
+  }
+  .doc {
+    width: 120px;
+  }
+}

@@ -1,0 +1,25 @@
+
+.bussinessPay {
+    .groupTitle {
+        text-align: center;
+        color: $dark-main-color;
+    }
+    .priceSectionTitle {
+     font-size: 17px;
+     text-align: center;
+     margin: 15px 0;
+    }
+    .prices {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .termsAdnConditions {
+        text-align: center;
+        color: $dark-main-color;
+        font-weight: 700;
+        text-decoration: underline;
+        font-size: 20px;
+        margin: 40px 0;
+    }
+}

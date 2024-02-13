@@ -1,0 +1,38 @@
+.bussinessPay {
+  padding: 14px 20px;
+  .paymentSetting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 22px);
+    background-color: $gray-bgc-input;
+    border-radius: 7px;
+    box-shadow: $global-box-shadow;
+    margin: 15px 0;
+    padding: 11px;
+    color: #615D5D;
+  }
+  
+  .plans {
+      background-color: $dark-main-color;
+      color: #fff;
+      padding: 15px 12px;
+      border-radius: 7px;
+      margin: 30px 0;
+      p:nth-child(1) {
+          margin-bottom: 20px;
+      }
+      p:nth-child(3) {
+          margin-top: 10px;
+      }
+      a {
+          color: #fff;
+          text-decoration: underline;
+      }
+  }
+  .actions {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+

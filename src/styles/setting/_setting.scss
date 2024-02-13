@@ -1,0 +1,37 @@
+.settingPage {
+  min-height: 100vh;
+  background-color: $behind-modal-color;
+  .settingComp {
+    padding: 11px;
+    .institutionalEmails {
+      color: $dark-main-color;
+      padding: 12px;
+      background-color: #fff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 5px;
+      .institutionalEmail {
+        width: 100%;
+        .emailRow {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: $dark-main-color;
+          margin: 15px 0;
+        }
+      }
+    }
+    .settingButtons {
+      .settingCard {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        background-color: #fff;
+        margin: 12px 0;
+        padding: 11px;
+        // font-weight: 700;
+      }
+    }
+  }
+}

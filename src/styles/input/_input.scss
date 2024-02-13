@@ -1,0 +1,59 @@
+.inputCompCont {
+    display: flex;
+    background-color: $gray-bgc-input;
+    box-shadow: $global-box-shadow;
+    padding: 0px 5px;
+  .inputComp {
+    height: 32px;
+    min-width: 200px;
+    width: 100%;
+    padding: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: .8rem;
+    &::placeholder {
+      text-align: center;
+      color: $gray-icon-color;
+    }
+    border: none;
+    background-color: $gray-bgc-input;
+    &:focus {
+      outline: unset;
+    }
+  }
+  .iconBeside {
+    background-color: #fff;
+    color: $dark-main-color;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+  }
+  .iconInside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $gray-bgc-input;
+    height: auto;
+    color: $gray-icon-color;
+    font-size: 25px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px;
+  }
+  .inputCompWithLabel {
+    width: 100%;
+    label {
+      font-weight: 600;
+      font-size: 1rem;
+      color: $dark-main-color;
+    }
+    span {
+      color: $dark-main-color ;
+    }
+  }
+}
+
+.hasLabel {
+  background-color: #fff;
+  box-shadow: unset;
+}

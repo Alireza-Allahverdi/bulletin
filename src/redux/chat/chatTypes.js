@@ -1,0 +1,4 @@
+export const CHAT_TYPES = {
+    SET_CHAT_TYPE : "SET_CHAT_TYPE",
+    SET_OTHER_DATA: "SET_OTHER_DATA",
+}

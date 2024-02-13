@@ -1,0 +1,35 @@
+.eachCard {
+  margin: 8px 0;
+}
+
+.infoCardTitleContainer {
+  color: $dark-main-color;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+  .title {
+    p {
+      display: flex;
+      align-items: center;
+    }
+  }
+  svg {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+}
+
+.infoCardContent {
+  text-align: end;
+  input {
+    border: 2px solid $light-main-color;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+    margin: 5px 0;
+    &:focus {
+      outline: unset;
+    }
+  }
+}

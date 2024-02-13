@@ -1,0 +1,59 @@
+.behindModal {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: $behind-modal-color;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+    .modalUpSelf {
+        text-align: center;
+        position: fixed;
+        top: 10%;
+        background-color: #fff;
+        width: 80%;
+        padding: 14px 21px;
+        border-radius: 10px;
+        color: $dark-main-color;
+        font-weight: 700;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        p:nth-child(1) {
+            margin-bottom: 10px;
+        }
+        .inputCompCont {
+            background-color: #fff;
+            box-shadow: none;
+        }
+        input {
+            margin: auto;
+            width: 123px;
+            font-weight: 700;
+            font-size: .9rem;
+        }
+        .upModalActions {
+            margin-top: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            button {
+                padding: 5px 15px;
+                border: none;
+                font-size: 1.1rem;
+                color: #fff;
+                border-radius: 5px;
+                min-width: 100px;
+                &:nth-child(1) {
+                    background-color: $not-going;
+                }
+                &:nth-child(2) {
+                    background-color: $light-main-color;
+                }
+            }
+        }
+    }
+}

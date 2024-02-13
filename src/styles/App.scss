@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  overflow-anchor: none;
+}
+
+.swiper {
+  width: 90%;
+  height: 100%;
+  border-radius: 14px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.noDataGif {
+  text-align: center;
+  font-weight: 700;
+}
+
+@import "./defaults/default";
+@import "./searchBar/searchBar";
+@import "./button/button";
+@import "./input/input";
+@import "./modal/modal";
+@import "./modal/upModal";
+@import "./reportConcern/reportConcern";
+@import "./authPage/confirmModal";
+@import "./loaders/loadingPage";
+@import "./cards/cards";
+@import "./footer/footer";
+@import "./appBar/appBar";
+@import "./imageCropModal/imageCropModalStyles";
+@import "./authPage/auth.scss";
+@import "./completeInfo/completeInfoPage";
+@import "./home/home";
+@import "./userGroups/user_groups";
+@import "./discoverPage/discover";
+@import "./newGroup/newGroup";
+@import "./profile/profile";
+@import "./contactus/contactUs";
+@import "./aboutus/aboutUs";
+@import "./setting/setting";
+@import "./chats/chats";
+@import "./groupHome/groupHome";
+@import "./groupSetting/groupSetting";
+@import "./members/members";
+@import "./topics/topics";
+@import "./document/document";
+@import "./events/events";
+@import "./notes/notes";
+@import "./myActivities/myActivities";
+@import "./supportus/supportUs";
+@import "./verifyInst/verifyInst";
+@import "./searchPage/searchPage";
+@import "./cards/repComCard";
+@import "./paymentResult/paymentResult";
+@import "./bussinessPayment/bussinessPayment";
+@import "./bussinessPayment/groupBussinessPayment";

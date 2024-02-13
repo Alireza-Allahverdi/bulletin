@@ -1,0 +1,23 @@
+.aboutUsPage {
+    .aboutusContent {
+        margin: 0 auto;
+        width: 85%;
+        line-height: 1.5rem;
+        color: #fff;
+        background-color: $dark-main-color;
+        padding: 15px;
+        border-radius: 16px;
+    }
+    .supportCont {
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        a {
+            text-decoration: none;
+            margin: 5px 0;
+            color: $dark-main-color;
+            font-weight: 700;
+        }
+    }
+}

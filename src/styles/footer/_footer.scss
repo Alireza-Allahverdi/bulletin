@@ -1,0 +1,19 @@
+.footerContainer {
+    border-radius: 40px;
+    position: fixed;
+    z-index: 10;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    padding: 12px 35px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    background: linear-gradient(150deg, #4a88df, #0f0b89);
+    color: white;
+    width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box;
+        // border-top-right-radius: 10px;
+    // border-top-left-radius: 10px;
+}

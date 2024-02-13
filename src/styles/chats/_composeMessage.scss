@@ -1,0 +1,79 @@
+.composeMessageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  z-index: 12;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 50px;
+  background-color: $behind-modal-color;
+  .composeModalSelf {
+    width: 85%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px 15px;
+    .searchArea {
+      width: 100%;
+      border-bottom: 1px solid #000;
+      .titleAndCloser {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+        .closer {
+          color: red;
+          border: none;
+          background-color: #fff;
+          font-size: 1.8rem;
+        }
+      }
+      form {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        input {
+          width: 85%;
+          padding: 10px;
+          border: 1px solid black;
+          border-radius: 5px;
+        }
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          background-color: $light-main-color;
+          border: none;
+          border-radius: 50%;
+          width: 40px;
+          font-size: 25px;
+        }
+      }
+      p {
+        color: red;
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+    }
+    .users {
+      overflow-y: scroll;
+      max-height: 75vh;
+      min-height: 85px;
+      .cardContainer {
+        margin: 10px 0;
+      }
+      .noData {
+        color: gray;
+        font-weight: 700;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // width: max-content;
+        margin: auto;
+      }
+    }
+  }
+}

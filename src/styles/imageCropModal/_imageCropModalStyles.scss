@@ -1,0 +1,28 @@
+.imageCropModal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(225, 226, 246, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    .imageCropContainer {
+        display: flex;
+        padding: 10px;
+        height: 300px;
+        flex-direction: column;
+        height: auto;
+        background-color: #fff;
+        border-radius: 2em;
+        .imageCropActions {
+            text-align: center;
+            button {
+                margin: 10px;
+            }
+        }
+    }
+  }
+  
