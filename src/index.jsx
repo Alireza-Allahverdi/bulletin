@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import { GoogleOAuthProvider } from "@react-oauth/google";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import store, { persistor } from "./redux/store";
 import { Provider } from "react-redux";
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
@@ -25,11 +25,13 @@ root.render(
     <QueryClientProvider client={queryClient}>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          <BrowserRouter>
+          {/* <BrowserRouter> */}
+          <HashRouter>
             <GoogleOAuthProvider clientId="85774236653-3apj9k4mt6f4q2u82n3e75j8f3c5u6l4.apps.googleusercontent.com">
               <App />
             </GoogleOAuthProvider>
-          </BrowserRouter>
+          </HashRouter>
+          {/* </BrowserRouter> */}
         </PersistGate>
       </Provider>
     </QueryClientProvider>
