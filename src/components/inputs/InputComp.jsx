@@ -27,6 +27,12 @@ function InputComp({ placeHolder, inputType, labelInnerText, iconInside, iconBes
                             type={inputType}
                             placeholder={placeHolder}
                             onChange={onChangeHandler}
+                            autoCorrect="none"
+                            autoCapitalize="none"
+                            autoComplete='none'
+                            style={{
+                                textTransform:inputType === "email" ? "lowercase" : ""
+                            }}
                         />
                         <span>{underInputnotice}</span>
                     </div>
@@ -38,8 +44,11 @@ function InputComp({ placeHolder, inputType, labelInnerText, iconInside, iconBes
                         type={inputType}
                         value={value}
                         placeholder={placeHolder}
-                        style={{ boxShadow: noBoxShadow ? "" : "initial" }}
+                        style={{ boxShadow: noBoxShadow ? "" : "initial", textTransform: inputType === "email" ? "lowercase" : "" }}
                         onChange={onChangeHandler}
+                        autoCorrect="none"
+                        autoCapitalize="none"
+                        autoComplete='none'
                     />
             }
         </div>

@@ -71,6 +71,9 @@ function SignUp() {
     if (checkIfEmailInString(phoneNumber)) {
       navigate("/completeinfo")
     }
+    else if (isNaN(phoneNumber)) {
+      toast.error("Please enter email or phone number")
+    }
     else {
       sendSms()
     }
@@ -115,7 +118,7 @@ function SignUp() {
               })
             }
           </select>
-          <InputComp placeHolder={"Email or Phone Number"} inputType={"text"} onChangeHandler={handlePhoneChange} />
+          <InputComp placeHolder={"Email or Phone Number"} inputType={"email"} onChangeHandler={handlePhoneChange} />
           <div className="signInWithGoogleCont">
             <p>or</p>
             <GoogleLogin

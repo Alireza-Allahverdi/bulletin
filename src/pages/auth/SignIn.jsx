@@ -31,12 +31,15 @@ function SignIn() {
         if (!phoneNumber) {
             return toast.error("input field is empty!", { duration: 1500 })
         }
-        dispatch(setPageLoader(true))
         if (checkIfEmailInString(phoneNumber)) {
             dispatch(setEmail(phoneNumber))
             navigate("/emailSignin")
         }
+        else if (isNaN(phoneNumber)) {
+            toast.error("Please enter email or phone number")
+        }      
         else {
+            dispatch(setPageLoader(true))
             let phoneNumberWithoutZero = phoneNumber[0] === "0" ? phoneNumber.slice(1) : phoneNumber
             let phoneWithPre = ((!chosenCode ? countryList["Andorra"] : chosenCode) + phoneNumberWithoutZero)
             fetchApi(SEND_SMS, { phone_number: phoneWithPre })
@@ -125,7 +128,7 @@ function SignIn() {
                             })
                         }
                     </select>
-                    <InputComp inputType={"text"} placeHolder={"Email or Phone Number"} iconInside={"mdi:user"} onChangeHandler={(e) => setPhoneNumber(e.target.value)} />
+                    <InputComp inputType={"email"} placeHolder={"Email or Phone Number"} iconInside={"mdi:user"} onChangeHandler={(e) => setPhoneNumber(e.target.value)} />
                     <div className="signInWithGoogleCont">
                         <p>or</p>
                         <GoogleLogin
