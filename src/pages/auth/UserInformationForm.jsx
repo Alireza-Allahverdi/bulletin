@@ -159,10 +159,10 @@ function UserInformationForm() {
         if (!inputFields.f_name || !inputFields.l_name || !chosenCity || !inputFields.password || !inputFields.cPassword || !inputFields.email) {
             return toast.error("Fields must not be empty")
         }
-        if (inputFields.f_name.length < 3) {
+        if (inputFields.f_name.length < 2) {
             return toast.error("First name must be atleast two letters")
         }
-        if (inputFields.l_name.length < 3) {
+        if (inputFields.l_name.length < 2) {
             return toast.error("Last name must be atleast two letters")
         }
         if (inputFields.password !== inputFields.cPassword) {
