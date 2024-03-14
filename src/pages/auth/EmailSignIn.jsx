@@ -53,11 +53,14 @@ function EmailSignIn() {
                         navigate("/")
                     }, 1000)
                 }
-                if (res.data.status_code === 401) {
+                else if (res.data.status_code === 401) {
                     toast.error(res.data.description, { duration: 2000 })
                     setTimeout(() => {
                         navigate("/completeinfo")
                     }, 1100)
+                }
+                else if (res.data.status_code === 402) {
+                    toast.error(res.data.description, { duration: 2000 })
                 }
             }).catch(() => {
                 toast.error("Something went wrong!")
